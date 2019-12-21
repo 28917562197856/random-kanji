@@ -1,15 +1,11 @@
 import React, { useReducer } from "react";
 import data from "../rtk-kanji.json";
 
+for (let e of data) if (typeof e === "boolean") console.log(e);
+
 type Kanji = {
+  keyword: string;
   kanji: string;
-  id_5th_ed: number;
-  id_6th_ed: number;
-  keyword_5th_ed: string;
-  keyword_6th_ed: string;
-  components: string;
-  on_reading: string;
-  kun_reading: string;
 };
 
 type State = {
@@ -24,7 +20,8 @@ type Action = {
 };
 
 const take = (): Kanji[] => {
-  return data.sort(() => 0.5 - Math.random()).slice(0, 18);
+  let shuffled: any = data;
+  return shuffled.sort(() => 0.5 - Math.random()).slice(0, 18);
 };
 
 const init = () => {
@@ -67,9 +64,9 @@ export const App: React.FC = () => {
         justifyItems: "center"
       }}
     >
-      <div className="my-2 text-3xl lg:text-6xl">{`${selectedKanji.keyword_6th_ed
+      <div className="my-2 text-3xl lg:text-6xl">{`${selectedKanji.keyword
         .charAt(0)
-        .toUpperCase()}${selectedKanji.keyword_6th_ed.substring(1)}`}</div>
+        .toUpperCase()}${selectedKanji.keyword.substring(1)}`}</div>
       <div className="absolute top-0 right-0 mt-2 mr-8 text-3xl lg:mr-32 lg:text-6xl">
         {score}
       </div>
@@ -78,7 +75,7 @@ export const App: React.FC = () => {
           <div
             style={{ fontFamily: "'M PLUS Rounded 1c', sans-serif" }}
             className="flex justify-center items-center w-32 h-32 p-2 rounded-lg cursor-pointer hover:bg-white hover:shadow-none lg:hover:shadow-2xl lg:hover:bg-gray-200"
-            key={k.keyword_5th_ed}
+            key={k.keyword}
             onClick={() => {
               k === selectedKanji
                 ? dispatch({ type: "select", score: score + 1 })
