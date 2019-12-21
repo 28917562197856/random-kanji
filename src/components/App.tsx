@@ -24,7 +24,7 @@ type Action = {
 };
 
 const take = (): Kanji[] => {
-  return data.sort(() => 0.5 - Math.random()).slice(0, 16);
+  return data.sort(() => 0.5 - Math.random()).slice(0, 18);
 };
 
 const init = () => {
@@ -67,15 +67,17 @@ export const App: React.FC = () => {
         justifyItems: "center"
       }}
     >
-      <div className="my-2 text-6xl">{`${selectedKanji.keyword_6th_ed
+      <div className="my-2 text-3xl lg:text-6xl">{`${selectedKanji.keyword_6th_ed
         .charAt(0)
         .toUpperCase()}${selectedKanji.keyword_6th_ed.substring(1)}`}</div>
-      <div className="absolute top-0 right-0 mt-2 mr-32 text-6xl">{score}</div>
+      <div className="absolute top-0 right-0 mt-2 mr-8 text-3xl lg:mr-32 lg:text-6xl">
+        {score}
+      </div>
       <div className="text-6xl sm:w-auto lg:w-1/3 flex flex-wrap justify-center">
         {kanji.map(k => (
           <div
             style={{ fontFamily: "'M PLUS Rounded 1c', sans-serif" }}
-            className="flex justify-center items-center w-32 h-32 p-2 rounded-lg cursor-pointer hover:shadow-2xl hover:bg-gray-200"
+            className="flex justify-center items-center w-32 h-32 p-2 rounded-lg cursor-pointer hover:bg-white hover:shadow-none lg:hover:shadow-2xl lg:hover:bg-gray-200"
             key={k.keyword_5th_ed}
             onClick={() => {
               k === selectedKanji
