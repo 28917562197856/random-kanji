@@ -1,4 +1,4 @@
-import React, { useReducer } from "react";
+import React, { useReducer, useState } from "react";
 import data from "../rtk-kanji.json";
 
 type Kanji = {
@@ -13,11 +13,13 @@ type State = {
   numOfKanji: number;
 };
 
-type Action = {
-  type: "select";
-  score?: number;
-  numOfKanji?: number;
-};
+type Action =
+  | {
+      type: "right";
+      score: number;
+    }
+  | { type: "wrong" }
+  | { type: "numOfKanji"; numOfKanji: number };
 
 const take = (n: number): Kanji[] => {
   let shuffled: any = data;
@@ -37,13 +39,30 @@ const init = () => {
 
 const reducer = (state: State, action: Action) => {
   switch (action.type) {
-    case "select": {
-      const newKanji = take(action.numOfKanji || state.numOfKanji);
+    case "right": {
+      const newKanji = take(state.numOfKanji);
       return {
-        score: action.score || state.score,
+        ...state,
+        score: action.score,
+        kanji: newKanji,
+        selectedKanji: newKanji[(newKanji.length * Math.random()) << 0]
+      };
+    }
+    case "wrong": {
+      const newKanji = take(state.numOfKanji);
+      return {
+        ...state,
+        kanji: newKanji,
+        selectedKanji: newKanji[(newKanji.length * Math.random()) << 0]
+      };
+    }
+    case "numOfKanji": {
+      const newKanji = take(action.numOfKanji);
+      return {
+        ...state,
         kanji: newKanji,
         selectedKanji: newKanji[(newKanji.length * Math.random()) << 0],
-        numOfKanji: action.numOfKanji || state.numOfKanji
+        numOfKanji: action.numOfKanji
       };
     }
     default: {
@@ -56,6 +75,7 @@ const initialState = init();
 
 export const App: React.FC = () => {
   const [state, dispatch] = useReducer(reducer, initialState);
+  const [changeBG, setChangeBG] = useState(false);
   const { score, kanji, selectedKanji } = state;
 
   return (
@@ -67,35 +87,48 @@ export const App: React.FC = () => {
       }}
     >
       <select
-        className="absolute mt-4 lg:mt-8 ml-8 px-2 py-1"
+        defaultValue={12}
+        className={styles.select}
         onChange={e => {
-          dispatch({ type: "select", numOfKanji: parseInt(e.target.value) });
+          dispatch({
+            type: "numOfKanji",
+            numOfKanji: parseInt(e.target.value)
+          });
         }}
       >
         {[...Array(21).keys()]
           .map(x => x + 4)
           .map(x => (
-            <option selected={x === 12 ? true : undefined} key={x}>
-              {x}
-            </option>
+            <option key={x}>{x}</option>
           ))}
       </select>
-      <div className="my-2 text-3xl lg:text-6xl">{`${selectedKanji.keyword
+      <div className={styles.keyword}>{`${selectedKanji.keyword
         .charAt(0)
         .toUpperCase()}${selectedKanji.keyword.substring(1)}`}</div>
-      <div className="absolute right-0 mt-2 mr-8 text-3xl lg:mr-32 lg:text-6xl">
-        {score}
-      </div>
-      <div className="text-6xl sm:w-auto lg:w-1/3 flex flex-wrap justify-center">
+      <div className={styles.score}>{score}</div>
+      <div className={styles.kanjiContainer}>
         {kanji.map(k => (
           <div
-            style={{ fontFamily: "'M PLUS Rounded 1c', sans-serif" }}
-            className="flex justify-center items-center w-32 h-32 p-2 rounded-lg cursor-pointer hover:bg-white hover:shadow-none lg:hover:shadow-2xl lg:hover:bg-gray-200"
+            style={{
+              fontFamily: "'M PLUS Rounded 1c', sans-serif",
+              pointerEvents: changeBG ? "none" : undefined
+            }}
+            className={
+              k === selectedKanji && changeBG
+                ? styles.kanjiSelected
+                : styles.kanji
+            }
             key={k.keyword}
             onClick={() => {
               k === selectedKanji
-                ? dispatch({ type: "select", score: score + 1 })
-                : dispatch({ type: "select" });
+                ? dispatch({ type: "right", score: score + 1 })
+                : (async () => {
+                    console.log(selectedKanji.kanji);
+                    setChangeBG(true);
+                    await new Promise(r => setTimeout(r, 1500));
+                    setChangeBG(false);
+                    dispatch({ type: "wrong" });
+                  })();
             }}
           >
             {k.kanji}
@@ -104,4 +137,15 @@ export const App: React.FC = () => {
       </div>
     </div>
   );
+};
+
+const styles = {
+  select: "absolute mt-4 lg:mt-8 ml-8 px-2 py-1",
+  keyword: "my-2 text-3xl lg:text-6xl",
+  score: "absolute right-0 mt-2 mr-8 text-3xl lg:mr-32 lg:text-6xl",
+  kanjiContainer: "text-6xl sm:w-auto lg:w-1/3 flex flex-wrap justify-center",
+  kanji: `flex justify-center items-center w-32 h-32 p-2 rounded-lg cursor-pointer
+          hover:bg-white hover:shadow-none lg:hover:shadow-2xl lg:hover:bg-gray-200`,
+  kanjiSelected:
+    "flex justify-center items-center w-32 h-32 p-2 rounded-lg border-2 border-green-200"
 };
