@@ -67,7 +67,7 @@ export const App: React.FC = () => {
       }}
     >
       <select
-        className="absolute mt-6 lg:mt-8 ml-8 px-2 py-1"
+        className="absolute mt-4 lg:mt-8 ml-8 px-2 py-1"
         onChange={e => {
           dispatch({ type: "select", numOfKanji: parseInt(e.target.value) });
         }}
