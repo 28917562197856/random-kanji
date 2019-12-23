@@ -28,15 +28,19 @@ const take = (kanjiSet: string, n: number): Kanji[] => {
   return shuffled.sort(() => 0.5 - Math.random()).slice(0, n);
 };
 
+const lsGet = (name: string) => localStorage.getItem(name) ?? "";
+
 const init = () => {
-  const kanji = take("allGrades", 24);
+  const defaultNumOfKanji = parseInt(lsGet("numOfKanji")) || 24;
+  const defaultKanjiSet = lsGet("kanjiSet") || "allGrades";
+  const kanji = take(defaultKanjiSet, defaultNumOfKanji);
   const selectedKanji = kanji[(kanji.length * Math.random()) << 0];
   return {
     score: 0,
     kanji,
     selectedKanji,
-    numOfKanji: 24,
-    kanjiSet: "allGrades"
+    numOfKanji: defaultNumOfKanji,
+    kanjiSet: defaultKanjiSet
   };
 };
 
@@ -103,9 +107,10 @@ export const App: React.FC = () => {
           style={{
             pointerEvents: changeBG ? "none" : undefined
           }}
-          defaultValue="allGrades"
+          defaultValue={lsGet("kanjiSet") || "allGrades"}
           className={styles.select}
           onChange={e => {
+            localStorage.setItem("kanjiSet", e.target.value);
             dispatch({
               type: "kanjiSet",
               kanjiSet: e.target.value
@@ -125,9 +130,10 @@ export const App: React.FC = () => {
           style={{
             pointerEvents: changeBG ? "none" : undefined
           }}
-          defaultValue={24}
+          defaultValue={parseInt(lsGet("numOfKanji")) || 24}
           className={styles.select + " ml-2"}
           onChange={e => {
+            localStorage.setItem("numOfKanji", e.target.value);
             dispatch({
               type: "numOfKanji",
               numOfKanji: parseInt(e.target.value)
@@ -193,7 +199,7 @@ export const App: React.FC = () => {
 const styles = {
   select: "self-center",
   keyword: "inline-block w-full text-center text-4xl lg:text-6xl",
-  score: "inline-block self-center text-3xl lg:text-6xl",
+  score: "inline-block self-center text-4xl lg:text-6xl",
   kanjiContainer: "text-6xl w-auto flex flex-wrap justify-center ",
   under20: "lg:w-1/3",
   over20: "lg:w-1/2",
