@@ -145,8 +145,7 @@ export const App: React.FC = () => {
 
 const styles = {
   select: "inline-block self-center",
-  keyword:
-    "inline-block w-full lg:w-1/2 text-center flex-grow-1 my-2 text-3xl lg:text-6xl",
+  keyword: "inline-block w-full lg:w-1/2 text-center my-2 text-3xl lg:text-6xl",
   score: "inline-block self-center text-3xl lg:text-6xl",
   kanjiContainer: "text-6xl sm:w-auto lg:w-1/3 flex flex-wrap justify-center",
   kanji: `flex justify-center items-center w-32 h-32 p-2 rounded-lg cursor-pointer
