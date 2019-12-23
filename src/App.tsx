@@ -145,11 +145,12 @@ export const App: React.FC = () => {
 
 const styles = {
   select: "inline-block self-center",
-  keyword: "inline-block text-center flex-grow-1 my-2 text-3xl lg:text-6xl",
-  score: "inline-block mt-2 text-3xl lg:text-6xl",
+  keyword:
+    "inline-block w-full lg:w-1/2 text-center flex-grow-1 my-2 text-3xl lg:text-6xl",
+  score: "inline-block self-center text-3xl lg:text-6xl",
   kanjiContainer: "text-6xl sm:w-auto lg:w-1/3 flex flex-wrap justify-center",
   kanji: `flex justify-center items-center w-32 h-32 p-2 rounded-lg cursor-pointer
-          hover:bg-white hover:shadow-none lg:hover:shadow-2xl lg:hover:bg-gray-200`,
+          hover:bg-white hover:shadow-none lg:hover:shadow-xl lg:hover:bg-gray-200`,
   kanjiSelected:
     "flex justify-center items-center w-32 h-32 p-2 rounded-lg border-2 border-green-200"
 };
