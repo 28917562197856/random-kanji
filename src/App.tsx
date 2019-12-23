@@ -1,5 +1,5 @@
 import React, { useReducer, useState } from "react";
-import data from "./rtk-kanji.json";
+import data from "./kanji.json";
 
 type Kanji = {
   keyword: string;
@@ -11,6 +11,7 @@ type State = {
   kanji: Kanji[];
   selectedKanji: Kanji;
   numOfKanji: number;
+  kanjiSet: string;
 };
 
 type Action =
@@ -19,28 +20,30 @@ type Action =
       score: number;
     }
   | { type: "wrong" }
-  | { type: "numOfKanji"; numOfKanji: number };
+  | { type: "numOfKanji"; numOfKanji: number }
+  | { type: "kanjiSet"; kanjiSet: string };
 
-const take = (n: number): Kanji[] => {
-  let shuffled: any = data;
+const take = (kanjiSet: string, n: number): Kanji[] => {
+  let shuffled: any = data[kanjiSet];
   return shuffled.sort(() => 0.5 - Math.random()).slice(0, n);
 };
 
 const init = () => {
-  const kanji = take(12);
+  const kanji = take("allGrades", 24);
   const selectedKanji = kanji[(kanji.length * Math.random()) << 0];
   return {
     score: 0,
     kanji,
     selectedKanji,
-    numOfKanji: 12
+    numOfKanji: 24,
+    kanjiSet: "allGrades"
   };
 };
 
 const reducer = (state: State, action: Action) => {
   switch (action.type) {
     case "right": {
-      const newKanji = take(state.numOfKanji);
+      const newKanji = take(state.kanjiSet, state.numOfKanji);
       return {
         ...state,
         score: action.score,
@@ -49,7 +52,7 @@ const reducer = (state: State, action: Action) => {
       };
     }
     case "wrong": {
-      const newKanji = take(state.numOfKanji);
+      const newKanji = take(state.kanjiSet, state.numOfKanji);
       return {
         ...state,
         kanji: newKanji,
@@ -57,12 +60,21 @@ const reducer = (state: State, action: Action) => {
       };
     }
     case "numOfKanji": {
-      const newKanji = take(action.numOfKanji);
+      const newKanji = take(state.kanjiSet, action.numOfKanji);
       return {
         ...state,
         kanji: newKanji,
         selectedKanji: newKanji[(newKanji.length * Math.random()) << 0],
         numOfKanji: action.numOfKanji
+      };
+    }
+    case "kanjiSet": {
+      const newKanji = take(action.kanjiSet, state.numOfKanji);
+      return {
+        ...state,
+        kanji: newKanji,
+        selectedKanji: newKanji[(newKanji.length * Math.random()) << 0],
+        kanjiSet: action.kanjiSet
       };
     }
     default: {
@@ -76,7 +88,7 @@ const initialState = init();
 export const App: React.FC = () => {
   const [state, dispatch] = useReducer(reducer, initialState);
   const [changeBG, setChangeBG] = useState(false);
-  const { score, kanji, selectedKanji } = state;
+  const { score, kanji, selectedKanji, numOfKanji } = state;
 
   return (
     <div
@@ -86,10 +98,35 @@ export const App: React.FC = () => {
         justifyItems: "center"
       }}
     >
-      <div className="mt-4 flex flex-wrap w-full justify-around">
+      <div className="mt-4">
         <select
-          defaultValue={12}
+          style={{
+            pointerEvents: changeBG ? "none" : undefined
+          }}
+          defaultValue="allGrades"
           className={styles.select}
+          onChange={e => {
+            dispatch({
+              type: "kanjiSet",
+              kanjiSet: e.target.value
+            });
+          }}
+        >
+          <option value="allGrades">Jōyō kanji</option>
+          {[...Array(6).keys()]
+            .map(x => x + 1)
+            .map(x => (
+              <option value={`grade${x}`} key={x}>{`Grade ${x}`}</option>
+            ))}
+          <option value="gradeS">Secondary School</option>
+          <option value="rtk">RTK 1+3</option>
+        </select>
+        <select
+          style={{
+            pointerEvents: changeBG ? "none" : undefined
+          }}
+          defaultValue={24}
+          className={styles.select + " ml-2"}
           onChange={e => {
             dispatch({
               type: "numOfKanji",
@@ -97,20 +134,30 @@ export const App: React.FC = () => {
             });
           }}
         >
-          {[...Array(21).keys()]
+          {[...Array(57).keys()]
             .map(x => x + 4)
             .map(x => (
               <option key={x}>{x}</option>
             ))}
         </select>
-        <div className={styles.keyword}>
-          {`${selectedKanji.keyword
-            .charAt(0)
-            .toUpperCase()}${selectedKanji.keyword.substring(1)}`}
-        </div>
-        <div className={styles.score}>{score}</div>
       </div>
-      <div className={styles.kanjiContainer}>
+      <div className={styles.keyword}>
+        {`${selectedKanji.keyword
+          .charAt(0)
+          .toUpperCase()}${selectedKanji.keyword.substring(1)}`}
+      </div>
+      <div className={styles.score}>{score}</div>
+      <div
+        className={(() => {
+          let k = styles.kanjiContainer;
+          if (numOfKanji >= 20 && numOfKanji < 30) k += styles.over20;
+          else if (numOfKanji >= 30 && numOfKanji < 40) k += styles.over30;
+          else if (numOfKanji >= 40 && numOfKanji < 50) k += styles.over40;
+          else if (numOfKanji >= 50) k += styles.over50;
+          else k += styles.under20;
+          return k;
+        })()}
+      >
         {kanji.map(k => (
           <div
             style={{
@@ -122,7 +169,7 @@ export const App: React.FC = () => {
                 ? styles.kanjiSelected
                 : styles.kanji
             }
-            key={k.keyword}
+            key={`${k.keyword}${Math.random() * 100000}`}
             onClick={() => {
               k === selectedKanji
                 ? dispatch({ type: "right", score: score + 1 })
@@ -144,12 +191,17 @@ export const App: React.FC = () => {
 };
 
 const styles = {
-  select: "inline-block self-center",
-  keyword: "inline-block w-full lg:w-1/2 text-center my-2 text-4xl lg:text-6xl",
+  select: "self-center",
+  keyword: "inline-block w-full text-center text-4xl lg:text-6xl",
   score: "inline-block self-center text-3xl lg:text-6xl",
-  kanjiContainer: "text-6xl sm:w-auto lg:w-1/3 flex flex-wrap justify-center",
+  kanjiContainer: "text-6xl w-auto flex flex-wrap justify-center ",
+  under20: "lg:w-1/3",
+  over20: "lg:w-1/2",
+  over30: "lg:w-2/3",
+  over40: "lg:w-4/5",
+  over50: "lg:w-full",
   kanji: `flex justify-center items-center w-32 h-32 p-2 rounded-lg cursor-pointer
           hover:bg-white hover:shadow-none lg:hover:shadow-xl lg:hover:bg-gray-200`,
   kanjiSelected:
-    "flex justify-center items-center w-32 h-32 p-2 rounded-lg border-2 border-green-200"
+    "flex justify-center items-center w-32 h-32 p-2 rounded-lg bg-green-200"
 };
