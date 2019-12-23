@@ -1,5 +1,5 @@
 import React, { useReducer, useState } from "react";
-import data from "../rtk-kanji.json";
+import data from "./rtk-kanji.json";
 
 type Kanji = {
   keyword: string;
@@ -86,26 +86,30 @@ export const App: React.FC = () => {
         justifyItems: "center"
       }}
     >
-      <select
-        defaultValue={12}
-        className={styles.select}
-        onChange={e => {
-          dispatch({
-            type: "numOfKanji",
-            numOfKanji: parseInt(e.target.value)
-          });
-        }}
-      >
-        {[...Array(21).keys()]
-          .map(x => x + 4)
-          .map(x => (
-            <option key={x}>{x}</option>
-          ))}
-      </select>
-      <div className={styles.keyword}>{`${selectedKanji.keyword
-        .charAt(0)
-        .toUpperCase()}${selectedKanji.keyword.substring(1)}`}</div>
-      <div className={styles.score}>{score}</div>
+      <div className="flex flex-wrap w-full justify-around">
+        <select
+          defaultValue={12}
+          className={styles.select}
+          onChange={e => {
+            dispatch({
+              type: "numOfKanji",
+              numOfKanji: parseInt(e.target.value)
+            });
+          }}
+        >
+          {[...Array(21).keys()]
+            .map(x => x + 4)
+            .map(x => (
+              <option key={x}>{x}</option>
+            ))}
+        </select>
+        <div className={styles.keyword}>
+          {`${selectedKanji.keyword
+            .charAt(0)
+            .toUpperCase()}${selectedKanji.keyword.substring(1)}`}
+        </div>
+        <div className={styles.score}>{score}</div>
+      </div>
       <div className={styles.kanjiContainer}>
         {kanji.map(k => (
           <div
@@ -140,9 +144,9 @@ export const App: React.FC = () => {
 };
 
 const styles = {
-  select: "absolute mt-4 lg:mt-8 ml-8 px-2 py-1",
-  keyword: "my-2 text-3xl lg:text-6xl",
-  score: "absolute right-0 mt-2 mr-8 text-3xl lg:mr-32 lg:text-6xl",
+  select: "inline-block self-center",
+  keyword: "inline-block text-center flex-grow-1 my-2 text-3xl lg:text-6xl",
+  score: "inline-block mt-2 text-3xl lg:text-6xl",
   kanjiContainer: "text-6xl sm:w-auto lg:w-1/3 flex flex-wrap justify-center",
   kanji: `flex justify-center items-center w-32 h-32 p-2 rounded-lg cursor-pointer
           hover:bg-white hover:shadow-none lg:hover:shadow-2xl lg:hover:bg-gray-200`,
