@@ -1,5 +1,5 @@
 import React, { useReducer, useState } from "react";
-import kanji from "./kanji.js";
+import kanjiSets from "./kanji.js";
 
 type Kanji = {
   keyword: string;
@@ -21,7 +21,7 @@ type Action =
   | { type: "kanjiSet"; kanjiSet: string };
 
 const take = (kanjiSet: string, n: number): Kanji[] => {
-  let shuffled: Kanji[] = kanji[kanjiSet];
+  let shuffled: Kanji[] = kanjiSets[kanjiSet][kanjiSet];
   return shuffled.sort(() => 0.5 - Math.random()).slice(0, n);
 };
 
@@ -89,7 +89,7 @@ const initialState = init();
 export const App: React.FC = () => {
   const [state, dispatch] = useReducer(reducer, initialState);
   const [changeBG, setChangeBG] = useState(false);
-  const { score, kanji, selectedKanji } = state;
+  const { score, kanji, selectedKanji, kanjiSet } = state;
 
   return (
     <div
@@ -114,14 +114,11 @@ export const App: React.FC = () => {
             });
           }}
         >
-          <option value="allGrades">Jōyō kanji</option>
-          {[...Array(6).keys()]
-            .map(x => x + 1)
-            .map(x => (
-              <option value={`grade${x}`} key={x}>{`Grade ${x}`}</option>
-            ))}
-          <option value="gradeS">Secondary School</option>
-          <option value="rtk">RTK 1+3</option>
+          {Object.entries(kanjiSets).map(e => (
+            <option value={e[0]} key={e[0]}>
+              {e[1].name} ({e[1][Object.keys(e[1])[0]].length})
+            </option>
+          ))}
         </select>
         <select
           style={{
