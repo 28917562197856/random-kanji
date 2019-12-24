@@ -1,0 +1,322 @@
+[
+  {
+    "keyword": "one",
+    "kanji": "一"
+  },
+  {
+    "keyword": "right (direction)",
+    "kanji": "右"
+  },
+  {
+    "keyword": "rain",
+    "kanji": "雨"
+  },
+  {
+    "keyword": "round, yen",
+    "kanji": "円"
+  },
+  {
+    "keyword": "king",
+    "kanji": "王"
+  },
+  {
+    "keyword": "sound",
+    "kanji": "音"
+  },
+  {
+    "keyword": "below",
+    "kanji": "下"
+  },
+  {
+    "keyword": "fire",
+    "kanji": "火"
+  },
+  {
+    "keyword": "flower",
+    "kanji": "花"
+  },
+  {
+    "keyword": "shellfish",
+    "kanji": "貝"
+  },
+  {
+    "keyword": "study",
+    "kanji": "学"
+  },
+  {
+    "keyword": "feeling",
+    "kanji": "気"
+  },
+  {
+    "keyword": "nine",
+    "kanji": "九"
+  },
+  {
+    "keyword": "rest",
+    "kanji": "休"
+  },
+  {
+    "keyword": "ball",
+    "kanji": "玉"
+  },
+  {
+    "keyword": "gold",
+    "kanji": "金"
+  },
+  {
+    "keyword": "sky",
+    "kanji": "空"
+  },
+  {
+    "keyword": "month, moon",
+    "kanji": "月"
+  },
+  {
+    "keyword": "dog",
+    "kanji": "犬"
+  },
+  {
+    "keyword": "see",
+    "kanji": "見"
+  },
+  {
+    "keyword": "five",
+    "kanji": "五"
+  },
+  {
+    "keyword": "mouth",
+    "kanji": "口"
+  },
+  {
+    "keyword": "school",
+    "kanji": "校"
+  },
+  {
+    "keyword": "left (direction)",
+    "kanji": "左"
+  },
+  {
+    "keyword": "three",
+    "kanji": "三"
+  },
+  {
+    "keyword": "mountain",
+    "kanji": "山"
+  },
+  {
+    "keyword": "child",
+    "kanji": "子"
+  },
+  {
+    "keyword": "four",
+    "kanji": "四"
+  },
+  {
+    "keyword": "thread",
+    "kanji": "糸"
+  },
+  {
+    "keyword": "letter",
+    "kanji": "字"
+  },
+  {
+    "keyword": "ear",
+    "kanji": "耳"
+  },
+  {
+    "keyword": "seven",
+    "kanji": "七"
+  },
+  {
+    "keyword": "car",
+    "kanji": "車"
+  },
+  {
+    "keyword": "hand",
+    "kanji": "手"
+  },
+  {
+    "keyword": "ten",
+    "kanji": "十"
+  },
+  {
+    "keyword": "exit",
+    "kanji": "出"
+  },
+  {
+    "keyword": "woman",
+    "kanji": "女"
+  },
+  {
+    "keyword": "small",
+    "kanji": "小"
+  },
+  {
+    "keyword": "up",
+    "kanji": "上"
+  },
+  {
+    "keyword": "forest",
+    "kanji": "森"
+  },
+  {
+    "keyword": "person",
+    "kanji": "人"
+  },
+  {
+    "keyword": "water",
+    "kanji": "水"
+  },
+  {
+    "keyword": "correct",
+    "kanji": "正"
+  },
+  {
+    "keyword": "life",
+    "kanji": "生"
+  },
+  {
+    "keyword": "blue",
+    "kanji": "青"
+  },
+  {
+    "keyword": "evening",
+    "kanji": "夕"
+  },
+  {
+    "keyword": "stone",
+    "kanji": "石"
+  },
+  {
+    "keyword": "red",
+    "kanji": "赤"
+  },
+  {
+    "keyword": "thousand",
+    "kanji": "千"
+  },
+  {
+    "keyword": "river",
+    "kanji": "川"
+  },
+  {
+    "keyword": "previous",
+    "kanji": "先"
+  },
+  {
+    "keyword": "early",
+    "kanji": "早"
+  },
+  {
+    "keyword": "grass",
+    "kanji": "草"
+  },
+  {
+    "keyword": "foot",
+    "kanji": "足"
+  },
+  {
+    "keyword": "village",
+    "kanji": "村"
+  },
+  {
+    "keyword": "large",
+    "kanji": "大"
+  },
+  {
+    "keyword": "male",
+    "kanji": "男"
+  },
+  {
+    "keyword": "bamboo",
+    "kanji": "竹"
+  },
+  {
+    "keyword": "middle",
+    "kanji": "中"
+  },
+  {
+    "keyword": "insect",
+    "kanji": "虫"
+  },
+  {
+    "keyword": "town",
+    "kanji": "町"
+  },
+  {
+    "keyword": "heaven",
+    "kanji": "天"
+  },
+  {
+    "keyword": "rice paddy",
+    "kanji": "田"
+  },
+  {
+    "keyword": "soil",
+    "kanji": "土"
+  },
+  {
+    "keyword": "two",
+    "kanji": "二"
+  },
+  {
+    "keyword": "day",
+    "kanji": "日"
+  },
+  {
+    "keyword": "enter",
+    "kanji": "入"
+  },
+  {
+    "keyword": "year",
+    "kanji": "年"
+  },
+  {
+    "keyword": "white",
+    "kanji": "白"
+  },
+  {
+    "keyword": "eight",
+    "kanji": "八"
+  },
+  {
+    "keyword": "hundred",
+    "kanji": "百"
+  },
+  {
+    "keyword": "writing",
+    "kanji": "文"
+  },
+  {
+    "keyword": "tree",
+    "kanji": "木"
+  },
+  {
+    "keyword": "book",
+    "kanji": "本"
+  },
+  {
+    "keyword": "name",
+    "kanji": "名"
+  },
+  {
+    "keyword": "eye",
+    "kanji": "目"
+  },
+  {
+    "keyword": "stand up",
+    "kanji": "立"
+  },
+  {
+    "keyword": "power",
+    "kanji": "力"
+  },
+  {
+    "keyword": "woods",
+    "kanji": "林"
+  },
+  {
+    "keyword": "six",
+    "kanji": "六"
+  }
+]

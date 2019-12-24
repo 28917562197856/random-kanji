@@ -1,5 +1,5 @@
 import React, { useReducer, useState } from "react";
-import data from "./kanji.json";
+import kanji from "./kanji.js";
 
 type Kanji = {
   keyword: string;
@@ -15,16 +15,13 @@ type State = {
 };
 
 type Action =
-  | {
-      type: "right";
-      score: number;
-    }
+  | { type: "right"; score: number }
   | { type: "wrong" }
   | { type: "numOfKanji"; numOfKanji: number }
   | { type: "kanjiSet"; kanjiSet: string };
 
 const take = (kanjiSet: string, n: number): Kanji[] => {
-  let shuffled: any = data[kanjiSet];
+  let shuffled: Kanji[] = kanji[kanjiSet];
   return shuffled.sort(() => 0.5 - Math.random()).slice(0, n);
 };
 
@@ -92,7 +89,7 @@ const initialState = init();
 export const App: React.FC = () => {
   const [state, dispatch] = useReducer(reducer, initialState);
   const [changeBG, setChangeBG] = useState(false);
-  const { score, kanji, selectedKanji, numOfKanji } = state;
+  const { score, kanji, selectedKanji } = state;
 
   return (
     <div
@@ -153,17 +150,7 @@ export const App: React.FC = () => {
           .toUpperCase()}${selectedKanji.keyword.substring(1)}`}
       </div>
       <div className={styles.score}>{score}</div>
-      <div
-        className={(() => {
-          let k = styles.kanjiContainer;
-          if (numOfKanji >= 20 && numOfKanji < 30) k += styles.over20;
-          else if (numOfKanji >= 30 && numOfKanji < 40) k += styles.over30;
-          else if (numOfKanji >= 40 && numOfKanji < 50) k += styles.over40;
-          else if (numOfKanji >= 50) k += styles.over50;
-          else k += styles.under20;
-          return k;
-        })()}
-      >
+      <div className={styles.kanjiContainer}>
         {kanji.map(k => (
           <div
             style={{
@@ -198,16 +185,12 @@ export const App: React.FC = () => {
 
 const styles = {
   select: "self-center",
-  keyword: "inline-block w-full text-center text-4xl lg:text-6xl",
+  keyword: "inline-block w-full text-center text-4xl lg:text-5xl xl:text-6xl",
   score: "inline-block self-center text-4xl lg:text-6xl",
-  kanjiContainer: "text-6xl w-auto flex flex-wrap justify-center ",
-  under20: "lg:w-1/3",
-  over20: "lg:w-1/2",
-  over30: "lg:w-2/3",
-  over40: "lg:w-4/5",
-  over50: "lg:w-full",
+  kanjiContainer: `text-6xl sm:text-6xl md:text-6xl lg:text-6xl xl:text-6xl
+        w-auto md:w-2/3 lg:w-2/3 xl:w-1/2 flex flex-wrap justify-center`,
   kanji: `flex justify-center items-center w-32 h-32 p-2 rounded-lg cursor-pointer
-          hover:bg-white hover:shadow-none lg:hover:shadow-xl lg:hover:bg-gray-200`,
+        hover:bg-white hover:shadow-none lg:hover:shadow-xl lg:hover:bg-gray-200`,
   kanjiSelected:
     "flex justify-center items-center w-32 h-32 p-2 rounded-lg bg-green-200"
 };

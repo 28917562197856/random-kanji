@@ -1,0 +1,642 @@
+[
+  {
+    "keyword": "pull",
+    "kanji": "引"
+  },
+  {
+    "keyword": "feather",
+    "kanji": "羽"
+  },
+  {
+    "keyword": "cloud",
+    "kanji": "雲"
+  },
+  {
+    "keyword": "garden",
+    "kanji": "園"
+  },
+  {
+    "keyword": "far",
+    "kanji": "遠"
+  },
+  {
+    "keyword": "what",
+    "kanji": "何"
+  },
+  {
+    "keyword": "section",
+    "kanji": "科"
+  },
+  {
+    "keyword": "summer",
+    "kanji": "夏"
+  },
+  {
+    "keyword": "house",
+    "kanji": "家"
+  },
+  {
+    "keyword": "song",
+    "kanji": "歌"
+  },
+  {
+    "keyword": "tableau",
+    "kanji": "画"
+  },
+  {
+    "keyword": "times",
+    "kanji": "回"
+  },
+  {
+    "keyword": "association",
+    "kanji": "会"
+  },
+  {
+    "keyword": "sea",
+    "kanji": "海"
+  },
+  {
+    "keyword": "picture",
+    "kanji": "絵"
+  },
+  {
+    "keyword": "outside",
+    "kanji": "外"
+  },
+  {
+    "keyword": "angle",
+    "kanji": "角"
+  },
+  {
+    "keyword": "pleasure",
+    "kanji": "楽"
+  },
+  {
+    "keyword": "active",
+    "kanji": "活"
+  },
+  {
+    "keyword": "interval",
+    "kanji": "間"
+  },
+  {
+    "keyword": "circle",
+    "kanji": "丸"
+  },
+  {
+    "keyword": "boulder",
+    "kanji": "岩"
+  },
+  {
+    "keyword": "face",
+    "kanji": "顔"
+  },
+  {
+    "keyword": "steam",
+    "kanji": "汽"
+  },
+  {
+    "keyword": "write down",
+    "kanji": "記"
+  },
+  {
+    "keyword": "return",
+    "kanji": "帰"
+  },
+  {
+    "keyword": "bow (archery, violin)",
+    "kanji": "弓"
+  },
+  {
+    "keyword": "cow",
+    "kanji": "牛"
+  },
+  {
+    "keyword": "fish",
+    "kanji": "魚"
+  },
+  {
+    "keyword": "capital",
+    "kanji": "京"
+  },
+  {
+    "keyword": "strong",
+    "kanji": "強"
+  },
+  {
+    "keyword": "teach",
+    "kanji": "教"
+  },
+  {
+    "keyword": "near",
+    "kanji": "近"
+  },
+  {
+    "keyword": "older brother",
+    "kanji": "兄"
+  },
+  {
+    "keyword": "shape",
+    "kanji": "形"
+  },
+  {
+    "keyword": "measure",
+    "kanji": "計"
+  },
+  {
+    "keyword": "origin",
+    "kanji": "元"
+  },
+  {
+    "keyword": "say",
+    "kanji": "言"
+  },
+  {
+    "keyword": "field",
+    "kanji": "原"
+  },
+  {
+    "keyword": "door",
+    "kanji": "戸"
+  },
+  {
+    "keyword": "old",
+    "kanji": "古"
+  },
+  {
+    "keyword": "noon",
+    "kanji": "午"
+  },
+  {
+    "keyword": "behind",
+    "kanji": "後"
+  },
+  {
+    "keyword": "language",
+    "kanji": "語"
+  },
+  {
+    "keyword": "craft",
+    "kanji": "工"
+  },
+  {
+    "keyword": "public",
+    "kanji": "公"
+  },
+  {
+    "keyword": "wide",
+    "kanji": "広"
+  },
+  {
+    "keyword": "mix",
+    "kanji": "交"
+  },
+  {
+    "keyword": "ray",
+    "kanji": "光"
+  },
+  {
+    "keyword": "think",
+    "kanji": "考"
+  },
+  {
+    "keyword": "go",
+    "kanji": "行"
+  },
+  {
+    "keyword": "tall, expensive",
+    "kanji": "高"
+  },
+  {
+    "keyword": "yellow",
+    "kanji": "黄"
+  },
+  {
+    "keyword": "fit",
+    "kanji": "合"
+  },
+  {
+    "keyword": "valley",
+    "kanji": "谷"
+  },
+  {
+    "keyword": "country",
+    "kanji": "国"
+  },
+  {
+    "keyword": "black",
+    "kanji": "黒"
+  },
+  {
+    "keyword": "now",
+    "kanji": "今"
+  },
+  {
+    "keyword": "genius",
+    "kanji": "才"
+  },
+  {
+    "keyword": "thin",
+    "kanji": "細"
+  },
+  {
+    "keyword": "make",
+    "kanji": "作"
+  },
+  {
+    "keyword": "calculate",
+    "kanji": "算"
+  },
+  {
+    "keyword": "stop",
+    "kanji": "止"
+  },
+  {
+    "keyword": "market",
+    "kanji": "市"
+  },
+  {
+    "keyword": "arrow",
+    "kanji": "矢"
+  },
+  {
+    "keyword": "older sister",
+    "kanji": "姉"
+  },
+  {
+    "keyword": "think",
+    "kanji": "思"
+  },
+  {
+    "keyword": "paper",
+    "kanji": "紙"
+  },
+  {
+    "keyword": "Buddhist temple",
+    "kanji": "寺"
+  },
+  {
+    "keyword": "oneself",
+    "kanji": "自"
+  },
+  {
+    "keyword": "time",
+    "kanji": "時"
+  },
+  {
+    "keyword": "room",
+    "kanji": "室"
+  },
+  {
+    "keyword": "company",
+    "kanji": "社"
+  },
+  {
+    "keyword": "weak",
+    "kanji": "弱"
+  },
+  {
+    "keyword": "neck",
+    "kanji": "首"
+  },
+  {
+    "keyword": "autumn",
+    "kanji": "秋"
+  },
+  {
+    "keyword": "week",
+    "kanji": "週"
+  },
+  {
+    "keyword": "springtime",
+    "kanji": "春"
+  },
+  {
+    "keyword": "write",
+    "kanji": "書"
+  },
+  {
+    "keyword": "few",
+    "kanji": "少"
+  },
+  {
+    "keyword": "place",
+    "kanji": "場"
+  },
+  {
+    "keyword": "color",
+    "kanji": "色"
+  },
+  {
+    "keyword": "eat, meal",
+    "kanji": "食"
+  },
+  {
+    "keyword": "heart",
+    "kanji": "心"
+  },
+  {
+    "keyword": "new",
+    "kanji": "新"
+  },
+  {
+    "keyword": "parent",
+    "kanji": "親"
+  },
+  {
+    "keyword": "diagram",
+    "kanji": "図"
+  },
+  {
+    "keyword": "number",
+    "kanji": "数"
+  },
+  {
+    "keyword": "west",
+    "kanji": "西"
+  },
+  {
+    "keyword": "voice",
+    "kanji": "声"
+  },
+  {
+    "keyword": "star",
+    "kanji": "星"
+  },
+  {
+    "keyword": "clear up",
+    "kanji": "晴"
+  },
+  {
+    "keyword": "cut",
+    "kanji": "切"
+  },
+  {
+    "keyword": "snow",
+    "kanji": "雪"
+  },
+  {
+    "keyword": "boat",
+    "kanji": "船"
+  },
+  {
+    "keyword": "line",
+    "kanji": "線"
+  },
+  {
+    "keyword": "in front",
+    "kanji": "前"
+  },
+  {
+    "keyword": "association",
+    "kanji": "組"
+  },
+  {
+    "keyword": "run",
+    "kanji": "走"
+  },
+  {
+    "keyword": "many",
+    "kanji": "多"
+  },
+  {
+    "keyword": "thick",
+    "kanji": "太"
+  },
+  {
+    "keyword": "body",
+    "kanji": "体"
+  },
+  {
+    "keyword": "pedestal",
+    "kanji": "台"
+  },
+  {
+    "keyword": "ground",
+    "kanji": "地"
+  },
+  {
+    "keyword": "pond",
+    "kanji": "池"
+  },
+  {
+    "keyword": "know",
+    "kanji": "知"
+  },
+  {
+    "keyword": "tea",
+    "kanji": "茶"
+  },
+  {
+    "keyword": "daytime",
+    "kanji": "昼"
+  },
+  {
+    "keyword": "long",
+    "kanji": "長"
+  },
+  {
+    "keyword": "bird",
+    "kanji": "鳥"
+  },
+  {
+    "keyword": "morning",
+    "kanji": "朝"
+  },
+  {
+    "keyword": "straight",
+    "kanji": "直"
+  },
+  {
+    "keyword": "pass through",
+    "kanji": "通"
+  },
+  {
+    "keyword": "younger brother",
+    "kanji": "弟"
+  },
+  {
+    "keyword": "shop",
+    "kanji": "店"
+  },
+  {
+    "keyword": "point",
+    "kanji": "点"
+  },
+  {
+    "keyword": "electricity",
+    "kanji": "電"
+  },
+  {
+    "keyword": "sword",
+    "kanji": "刀"
+  },
+  {
+    "keyword": "winter",
+    "kanji": "冬"
+  },
+  {
+    "keyword": "hit",
+    "kanji": "当"
+  },
+  {
+    "keyword": "east",
+    "kanji": "東"
+  },
+  {
+    "keyword": "answer",
+    "kanji": "答"
+  },
+  {
+    "keyword": "head",
+    "kanji": "頭"
+  },
+  {
+    "keyword": "same",
+    "kanji": "同"
+  },
+  {
+    "keyword": "road",
+    "kanji": "道"
+  },
+  {
+    "keyword": "read",
+    "kanji": "読"
+  },
+  {
+    "keyword": "inside",
+    "kanji": "内"
+  },
+  {
+    "keyword": "south",
+    "kanji": "南"
+  },
+  {
+    "keyword": "meat",
+    "kanji": "肉"
+  },
+  {
+    "keyword": "horse",
+    "kanji": "馬"
+  },
+  {
+    "keyword": "sell",
+    "kanji": "売"
+  },
+  {
+    "keyword": "buy",
+    "kanji": "買"
+  },
+  {
+    "keyword": "wheat",
+    "kanji": "麦"
+  },
+  {
+    "keyword": "half",
+    "kanji": "半"
+  },
+  {
+    "keyword": "one's turn",
+    "kanji": "番"
+  },
+  {
+    "keyword": "father",
+    "kanji": "父"
+  },
+  {
+    "keyword": "wind",
+    "kanji": "風"
+  },
+  {
+    "keyword": "minute",
+    "kanji": "分"
+  },
+  {
+    "keyword": "hear",
+    "kanji": "聞"
+  },
+  {
+    "keyword": "rice",
+    "kanji": "米"
+  },
+  {
+    "keyword": "walk",
+    "kanji": "歩"
+  },
+  {
+    "keyword": "mother",
+    "kanji": "母"
+  },
+  {
+    "keyword": "direction",
+    "kanji": "方"
+  },
+  {
+    "keyword": "north",
+    "kanji": "北"
+  },
+  {
+    "keyword": "every",
+    "kanji": "毎"
+  },
+  {
+    "keyword": "younger sister",
+    "kanji": "妹"
+  },
+  {
+    "keyword": "ten thousand",
+    "kanji": "万"
+  },
+  {
+    "keyword": "bright",
+    "kanji": "明"
+  },
+  {
+    "keyword": "chirp",
+    "kanji": "鳴"
+  },
+  {
+    "keyword": "hair",
+    "kanji": "毛"
+  },
+  {
+    "keyword": "gates",
+    "kanji": "門"
+  },
+  {
+    "keyword": "night",
+    "kanji": "夜"
+  },
+  {
+    "keyword": "field",
+    "kanji": "野"
+  },
+  {
+    "keyword": "friend",
+    "kanji": "友"
+  },
+  {
+    "keyword": "use",
+    "kanji": "用"
+  },
+  {
+    "keyword": "day of the week",
+    "kanji": "曜"
+  },
+  {
+    "keyword": "come",
+    "kanji": "来"
+  },
+  {
+    "keyword": "village",
+    "kanji": "里"
+  },
+  {
+    "keyword": "reason",
+    "kanji": "理"
+  },
+  {
+    "keyword": "talk",
+    "kanji": "話"
+  }
+]

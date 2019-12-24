@@ -1,0 +1,802 @@
+[
+  {
+    "keyword": "love",
+    "kanji": "愛"
+  },
+  {
+    "keyword": "plan",
+    "kanji": "案"
+  },
+  {
+    "keyword": "by means of",
+    "kanji": "以"
+  },
+  {
+    "keyword": "clothes",
+    "kanji": "衣"
+  },
+  {
+    "keyword": "rank",
+    "kanji": "位"
+  },
+  {
+    "keyword": "surround",
+    "kanji": "囲"
+  },
+  {
+    "keyword": "stomach",
+    "kanji": "胃"
+  },
+  {
+    "keyword": "mark",
+    "kanji": "印"
+  },
+  {
+    "keyword": "England",
+    "kanji": "英"
+  },
+  {
+    "keyword": "prosperity",
+    "kanji": "栄"
+  },
+  {
+    "keyword": "salt",
+    "kanji": "塩"
+  },
+  {
+    "keyword": "hundred million",
+    "kanji": "億"
+  },
+  {
+    "keyword": "add",
+    "kanji": "加"
+  },
+  {
+    "keyword": "fruit",
+    "kanji": "果"
+  },
+  {
+    "keyword": "freight",
+    "kanji": "貨"
+  },
+  {
+    "keyword": "section",
+    "kanji": "課"
+  },
+  {
+    "keyword": "bud",
+    "kanji": "芽"
+  },
+  {
+    "keyword": "reformation",
+    "kanji": "改"
+  },
+  {
+    "keyword": "contraption",
+    "kanji": "械"
+  },
+  {
+    "keyword": "harm",
+    "kanji": "害"
+  },
+  {
+    "keyword": "street",
+    "kanji": "街"
+  },
+  {
+    "keyword": "each",
+    "kanji": "各"
+  },
+  {
+    "keyword": "memorize",
+    "kanji": "覚"
+  },
+  {
+    "keyword": "perfect",
+    "kanji": "完"
+  },
+  {
+    "keyword": "government official",
+    "kanji": "官"
+  },
+  {
+    "keyword": "pipe",
+    "kanji": "管"
+  },
+  {
+    "keyword": "related",
+    "kanji": "関"
+  },
+  {
+    "keyword": "observe",
+    "kanji": "観"
+  },
+  {
+    "keyword": "request",
+    "kanji": "願"
+  },
+  {
+    "keyword": "hope",
+    "kanji": "希"
+  },
+  {
+    "keyword": "seasons",
+    "kanji": "季"
+  },
+  {
+    "keyword": "chronicle",
+    "kanji": "紀"
+  },
+  {
+    "keyword": "rejoice",
+    "kanji": "喜"
+  },
+  {
+    "keyword": "national flag",
+    "kanji": "旗"
+  },
+  {
+    "keyword": "container",
+    "kanji": "器"
+  },
+  {
+    "keyword": "machine",
+    "kanji": "機"
+  },
+  {
+    "keyword": "deliberation",
+    "kanji": "議"
+  },
+  {
+    "keyword": "request",
+    "kanji": "求"
+  },
+  {
+    "keyword": "cry",
+    "kanji": "泣"
+  },
+  {
+    "keyword": "salvation",
+    "kanji": "救"
+  },
+  {
+    "keyword": "salary",
+    "kanji": "給"
+  },
+  {
+    "keyword": "raise",
+    "kanji": "挙"
+  },
+  {
+    "keyword": "fishing",
+    "kanji": "漁"
+  },
+  {
+    "keyword": "together",
+    "kanji": "共"
+  },
+  {
+    "keyword": "cooperation",
+    "kanji": "協"
+  },
+  {
+    "keyword": "mirror",
+    "kanji": "鏡"
+  },
+  {
+    "keyword": "compete",
+    "kanji": "競"
+  },
+  {
+    "keyword": "poles",
+    "kanji": "極"
+  },
+  {
+    "keyword": "instruction",
+    "kanji": "訓"
+  },
+  {
+    "keyword": "army",
+    "kanji": "軍"
+  },
+  {
+    "keyword": "county",
+    "kanji": "郡"
+  },
+  {
+    "keyword": "diameter",
+    "kanji": "径"
+  },
+  {
+    "keyword": "model",
+    "kanji": "型"
+  },
+  {
+    "keyword": "scenery",
+    "kanji": "景"
+  },
+  {
+    "keyword": "art",
+    "kanji": "芸"
+  },
+  {
+    "keyword": "lack",
+    "kanji": "欠"
+  },
+  {
+    "keyword": "tie",
+    "kanji": "結"
+  },
+  {
+    "keyword": "build",
+    "kanji": "建"
+  },
+  {
+    "keyword": "healthy",
+    "kanji": "健"
+  },
+  {
+    "keyword": "test",
+    "kanji": "験"
+  },
+  {
+    "keyword": "hard",
+    "kanji": "固"
+  },
+  {
+    "keyword": "achievement",
+    "kanji": "功"
+  },
+  {
+    "keyword": "like",
+    "kanji": "好"
+  },
+  {
+    "keyword": "climate",
+    "kanji": "候"
+  },
+  {
+    "keyword": "cruise",
+    "kanji": "航"
+  },
+  {
+    "keyword": "health",
+    "kanji": "康"
+  },
+  {
+    "keyword": "tell",
+    "kanji": "告"
+  },
+  {
+    "keyword": "distinction",
+    "kanji": "差"
+  },
+  {
+    "keyword": "vegetable",
+    "kanji": "菜"
+  },
+  {
+    "keyword": "most",
+    "kanji": "最"
+  },
+  {
+    "keyword": "lumber",
+    "kanji": "材"
+  },
+  {
+    "keyword": "previous",
+    "kanji": "昨"
+  },
+  {
+    "keyword": "tag",
+    "kanji": "札"
+  },
+  {
+    "keyword": "printing",
+    "kanji": "刷"
+  },
+  {
+    "keyword": "kill",
+    "kanji": "殺"
+  },
+  {
+    "keyword": "guess",
+    "kanji": "察"
+  },
+  {
+    "keyword": "participate",
+    "kanji": "参"
+  },
+  {
+    "keyword": "give birth",
+    "kanji": "産"
+  },
+  {
+    "keyword": "scatter",
+    "kanji": "散"
+  },
+  {
+    "keyword": "remainder",
+    "kanji": "残"
+  },
+  {
+    "keyword": "gentleman",
+    "kanji": "士"
+  },
+  {
+    "keyword": "family name",
+    "kanji": "氏"
+  },
+  {
+    "keyword": "history",
+    "kanji": "史"
+  },
+  {
+    "keyword": "director",
+    "kanji": "司"
+  },
+  {
+    "keyword": "test",
+    "kanji": "試"
+  },
+  {
+    "keyword": "child",
+    "kanji": "児"
+  },
+  {
+    "keyword": "govern",
+    "kanji": "治"
+  },
+  {
+    "keyword": "resign",
+    "kanji": "辞"
+  },
+  {
+    "keyword": "lose",
+    "kanji": "失"
+  },
+  {
+    "keyword": "borrow",
+    "kanji": "借"
+  },
+  {
+    "keyword": "kind",
+    "kanji": "種"
+  },
+  {
+    "keyword": "circumference",
+    "kanji": "周"
+  },
+  {
+    "keyword": "celebrate",
+    "kanji": "祝"
+  },
+  {
+    "keyword": "obey",
+    "kanji": "順"
+  },
+  {
+    "keyword": "first",
+    "kanji": "初"
+  },
+  {
+    "keyword": "pine",
+    "kanji": "松"
+  },
+  {
+    "keyword": "laugh",
+    "kanji": "笑"
+  },
+  {
+    "keyword": "chant",
+    "kanji": "唱"
+  },
+  {
+    "keyword": "bake",
+    "kanji": "焼"
+  },
+  {
+    "keyword": "elephant",
+    "kanji": "象"
+  },
+  {
+    "keyword": "illuminate",
+    "kanji": "照"
+  },
+  {
+    "keyword": "prize",
+    "kanji": "賞"
+  },
+  {
+    "keyword": "retainer",
+    "kanji": "臣"
+  },
+  {
+    "keyword": "trust",
+    "kanji": "信"
+  },
+  {
+    "keyword": "become",
+    "kanji": "成"
+  },
+  {
+    "keyword": "government ministry",
+    "kanji": "省"
+  },
+  {
+    "keyword": "pure",
+    "kanji": "清"
+  },
+  {
+    "keyword": "quiet",
+    "kanji": "静"
+  },
+  {
+    "keyword": "seat",
+    "kanji": "席"
+  },
+  {
+    "keyword": "accumulate",
+    "kanji": "積"
+  },
+  {
+    "keyword": "fold",
+    "kanji": "折"
+  },
+  {
+    "keyword": "node",
+    "kanji": "節"
+  },
+  {
+    "keyword": "theory",
+    "kanji": "説"
+  },
+  {
+    "keyword": "shallow",
+    "kanji": "浅"
+  },
+  {
+    "keyword": "war",
+    "kanji": "戦"
+  },
+  {
+    "keyword": "choose",
+    "kanji": "選"
+  },
+  {
+    "keyword": "so",
+    "kanji": "然"
+  },
+  {
+    "keyword": "conflict",
+    "kanji": "争"
+  },
+  {
+    "keyword": "warehouse",
+    "kanji": "倉"
+  },
+  {
+    "keyword": "nest",
+    "kanji": "巣"
+  },
+  {
+    "keyword": "bundle",
+    "kanji": "束"
+  },
+  {
+    "keyword": "side",
+    "kanji": "側"
+  },
+  {
+    "keyword": "continue",
+    "kanji": "続"
+  },
+  {
+    "keyword": "graduate",
+    "kanji": "卒"
+  },
+  {
+    "keyword": "grandchild",
+    "kanji": "孫"
+  },
+  {
+    "keyword": "sash",
+    "kanji": "帯"
+  },
+  {
+    "keyword": "group",
+    "kanji": "隊"
+  },
+  {
+    "keyword": "attain",
+    "kanji": "達"
+  },
+  {
+    "keyword": "simple",
+    "kanji": "単"
+  },
+  {
+    "keyword": "put",
+    "kanji": "置"
+  },
+  {
+    "keyword": "relationship",
+    "kanji": "仲"
+  },
+  {
+    "keyword": "savings",
+    "kanji": "貯"
+  },
+  {
+    "keyword": "portent, trillion",
+    "kanji": "兆"
+  },
+  {
+    "keyword": "intestines",
+    "kanji": "腸"
+  },
+  {
+    "keyword": "low",
+    "kanji": "低"
+  },
+  {
+    "keyword": "bottom",
+    "kanji": "底"
+  },
+  {
+    "keyword": "halt",
+    "kanji": "停"
+  },
+  {
+    "keyword": "target",
+    "kanji": "的"
+  },
+  {
+    "keyword": "code",
+    "kanji": "典"
+  },
+  {
+    "keyword": "transmit",
+    "kanji": "伝"
+  },
+  {
+    "keyword": "junior",
+    "kanji": "徒"
+  },
+  {
+    "keyword": "toil",
+    "kanji": "努"
+  },
+  {
+    "keyword": "lamp",
+    "kanji": "灯"
+  },
+  {
+    "keyword": "public chamber",
+    "kanji": "堂"
+  },
+  {
+    "keyword": "work",
+    "kanji": "働"
+  },
+  {
+    "keyword": "special",
+    "kanji": "特"
+  },
+  {
+    "keyword": "acquire",
+    "kanji": "得"
+  },
+  {
+    "keyword": "poison",
+    "kanji": "毒"
+  },
+  {
+    "keyword": "heat",
+    "kanji": "熱"
+  },
+  {
+    "keyword": "thought",
+    "kanji": "念"
+  },
+  {
+    "keyword": "failure",
+    "kanji": "敗"
+  },
+  {
+    "keyword": "ume (Japanese apricot)",
+    "kanji": "梅"
+  },
+  {
+    "keyword": "Dr.",
+    "kanji": "博"
+  },
+  {
+    "keyword": "meal",
+    "kanji": "飯"
+  },
+  {
+    "keyword": "fly",
+    "kanji": "飛"
+  },
+  {
+    "keyword": "expense",
+    "kanji": "費"
+  },
+  {
+    "keyword": "without fail",
+    "kanji": "必"
+  },
+  {
+    "keyword": "ballot",
+    "kanji": "票"
+  },
+  {
+    "keyword": "signpost",
+    "kanji": "標"
+  },
+  {
+    "keyword": "non-",
+    "kanji": "不"
+  },
+  {
+    "keyword": "husband",
+    "kanji": "夫"
+  },
+  {
+    "keyword": "attach",
+    "kanji": "付"
+  },
+  {
+    "keyword": "urban prefecture",
+    "kanji": "府"
+  },
+  {
+    "keyword": "vice",
+    "kanji": "副"
+  },
+  {
+    "keyword": "flour",
+    "kanji": "粉"
+  },
+  {
+    "keyword": "soldier",
+    "kanji": "兵"
+  },
+  {
+    "keyword": "separate",
+    "kanji": "別"
+  },
+  {
+    "keyword": "environs",
+    "kanji": "辺"
+  },
+  {
+    "keyword": "change",
+    "kanji": "変"
+  },
+  {
+    "keyword": "convenience",
+    "kanji": "便"
+  },
+  {
+    "keyword": "wrap",
+    "kanji": "包"
+  },
+  {
+    "keyword": "method",
+    "kanji": "法"
+  },
+  {
+    "keyword": "hope",
+    "kanji": "望"
+  },
+  {
+    "keyword": "breed",
+    "kanji": "牧"
+  },
+  {
+    "keyword": "end",
+    "kanji": "末"
+  },
+  {
+    "keyword": "full",
+    "kanji": "満"
+  },
+  {
+    "keyword": "not yet",
+    "kanji": "未"
+  },
+  {
+    "keyword": "vein",
+    "kanji": "脈"
+  },
+  {
+    "keyword": "people",
+    "kanji": "民"
+  },
+  {
+    "keyword": "nothing",
+    "kanji": "無"
+  },
+  {
+    "keyword": "promise",
+    "kanji": "約"
+  },
+  {
+    "keyword": "courage",
+    "kanji": "勇"
+  },
+  {
+    "keyword": "need",
+    "kanji": "要"
+  },
+  {
+    "keyword": "foster",
+    "kanji": "養"
+  },
+  {
+    "keyword": "bathe",
+    "kanji": "浴"
+  },
+  {
+    "keyword": "profit",
+    "kanji": "利"
+  },
+  {
+    "keyword": "land",
+    "kanji": "陸"
+  },
+  {
+    "keyword": "good",
+    "kanji": "良"
+  },
+  {
+    "keyword": "fee",
+    "kanji": "料"
+  },
+  {
+    "keyword": "quantity",
+    "kanji": "量"
+  },
+  {
+    "keyword": "wheel",
+    "kanji": "輪"
+  },
+  {
+    "keyword": "sort",
+    "kanji": "類"
+  },
+  {
+    "keyword": "orders",
+    "kanji": "令"
+  },
+  {
+    "keyword": "cool",
+    "kanji": "冷"
+  },
+  {
+    "keyword": "example",
+    "kanji": "例"
+  },
+  {
+    "keyword": "curriculum",
+    "kanji": "歴"
+  },
+  {
+    "keyword": "take along",
+    "kanji": "連"
+  },
+  {
+    "keyword": "old man",
+    "kanji": "老"
+  },
+  {
+    "keyword": "labour",
+    "kanji": "労"
+  },
+  {
+    "keyword": "record",
+    "kanji": "録"
+  }
+]

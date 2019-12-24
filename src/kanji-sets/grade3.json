@@ -1,0 +1,802 @@
+[
+  {
+    "keyword": "bad",
+    "kanji": "悪"
+  },
+  {
+    "keyword": "cheap",
+    "kanji": "安"
+  },
+  {
+    "keyword": "dark",
+    "kanji": "暗"
+  },
+  {
+    "keyword": "medicine",
+    "kanji": "医"
+  },
+  {
+    "keyword": "committee",
+    "kanji": "委"
+  },
+  {
+    "keyword": "idea",
+    "kanji": "意"
+  },
+  {
+    "keyword": "nurture",
+    "kanji": "育"
+  },
+  {
+    "keyword": "member",
+    "kanji": "員"
+  },
+  {
+    "keyword": "institution",
+    "kanji": "院"
+  },
+  {
+    "keyword": "drink",
+    "kanji": "飲"
+  },
+  {
+    "keyword": "carry",
+    "kanji": "運"
+  },
+  {
+    "keyword": "swim",
+    "kanji": "泳"
+  },
+  {
+    "keyword": "station",
+    "kanji": "駅"
+  },
+  {
+    "keyword": "center",
+    "kanji": "央"
+  },
+  {
+    "keyword": "side",
+    "kanji": "横"
+  },
+  {
+    "keyword": "roof",
+    "kanji": "屋"
+  },
+  {
+    "keyword": "warm",
+    "kanji": "温"
+  },
+  {
+    "keyword": "change",
+    "kanji": "化"
+  },
+  {
+    "keyword": "luggage",
+    "kanji": "荷"
+  },
+  {
+    "keyword": "world",
+    "kanji": "界"
+  },
+  {
+    "keyword": "open",
+    "kanji": "開"
+  },
+  {
+    "keyword": "floor of a building",
+    "kanji": "階"
+  },
+  {
+    "keyword": "cold",
+    "kanji": "寒"
+  },
+  {
+    "keyword": "feeling",
+    "kanji": "感"
+  },
+  {
+    "keyword": "China",
+    "kanji": "漢"
+  },
+  {
+    "keyword": "public building",
+    "kanji": "館"
+  },
+  {
+    "keyword": "beach",
+    "kanji": "岸"
+  },
+  {
+    "keyword": "wake up",
+    "kanji": "起"
+  },
+  {
+    "keyword": "period of time",
+    "kanji": "期"
+  },
+  {
+    "keyword": "guest",
+    "kanji": "客"
+  },
+  {
+    "keyword": "research",
+    "kanji": "究"
+  },
+  {
+    "keyword": "hurry",
+    "kanji": "急"
+  },
+  {
+    "keyword": "rank",
+    "kanji": "級"
+  },
+  {
+    "keyword": "Shinto shrine",
+    "kanji": "宮"
+  },
+  {
+    "keyword": "sphere",
+    "kanji": "球"
+  },
+  {
+    "keyword": "leave",
+    "kanji": "去"
+  },
+  {
+    "keyword": "bridge",
+    "kanji": "橋"
+  },
+  {
+    "keyword": "business",
+    "kanji": "業"
+  },
+  {
+    "keyword": "musical composition",
+    "kanji": "曲"
+  },
+  {
+    "keyword": "office",
+    "kanji": "局"
+  },
+  {
+    "keyword": "silver",
+    "kanji": "銀"
+  },
+  {
+    "keyword": "ward",
+    "kanji": "区"
+  },
+  {
+    "keyword": "suffer",
+    "kanji": "苦"
+  },
+  {
+    "keyword": "tool",
+    "kanji": "具"
+  },
+  {
+    "keyword": "you",
+    "kanji": "君"
+  },
+  {
+    "keyword": "person in charge",
+    "kanji": "係"
+  },
+  {
+    "keyword": "light",
+    "kanji": "軽"
+  },
+  {
+    "keyword": "blood",
+    "kanji": "血"
+  },
+  {
+    "keyword": "decide",
+    "kanji": "決"
+  },
+  {
+    "keyword": "sharpen",
+    "kanji": "研"
+  },
+  {
+    "keyword": "prefecture",
+    "kanji": "県"
+  },
+  {
+    "keyword": "warehouse",
+    "kanji": "庫"
+  },
+  {
+    "keyword": "lake",
+    "kanji": "湖"
+  },
+  {
+    "keyword": "over there",
+    "kanji": "向"
+  },
+  {
+    "keyword": "happiness",
+    "kanji": "幸"
+  },
+  {
+    "keyword": "harbor",
+    "kanji": "港"
+  },
+  {
+    "keyword": "number",
+    "kanji": "号"
+  },
+  {
+    "keyword": "root",
+    "kanji": "根"
+  },
+  {
+    "keyword": "festival",
+    "kanji": "祭"
+  },
+  {
+    "keyword": "dish",
+    "kanji": "皿"
+  },
+  {
+    "keyword": "do",
+    "kanji": "仕"
+  },
+  {
+    "keyword": "death",
+    "kanji": "死"
+  },
+  {
+    "keyword": "use",
+    "kanji": "使"
+  },
+  {
+    "keyword": "begin",
+    "kanji": "始"
+  },
+  {
+    "keyword": "finger",
+    "kanji": "指"
+  },
+  {
+    "keyword": "tooth",
+    "kanji": "歯"
+  },
+  {
+    "keyword": "poem",
+    "kanji": "詩"
+  },
+  {
+    "keyword": "next",
+    "kanji": "次"
+  },
+  {
+    "keyword": "abstract thing",
+    "kanji": "事"
+  },
+  {
+    "keyword": "hold",
+    "kanji": "持"
+  },
+  {
+    "keyword": "style",
+    "kanji": "式"
+  },
+  {
+    "keyword": "truth",
+    "kanji": "実"
+  },
+  {
+    "keyword": "copy",
+    "kanji": "写"
+  },
+  {
+    "keyword": "someone",
+    "kanji": "者"
+  },
+  {
+    "keyword": "master",
+    "kanji": "主"
+  },
+  {
+    "keyword": "protect",
+    "kanji": "守"
+  },
+  {
+    "keyword": "take",
+    "kanji": "取"
+  },
+  {
+    "keyword": "alcoholic drink",
+    "kanji": "酒"
+  },
+  {
+    "keyword": "accept",
+    "kanji": "受"
+  },
+  {
+    "keyword": "state",
+    "kanji": "州"
+  },
+  {
+    "keyword": "pick up",
+    "kanji": "拾"
+  },
+  {
+    "keyword": "end",
+    "kanji": "終"
+  },
+  {
+    "keyword": "learn",
+    "kanji": "習"
+  },
+  {
+    "keyword": "collect",
+    "kanji": "集"
+  },
+  {
+    "keyword": "dwelling",
+    "kanji": "住"
+  },
+  {
+    "keyword": "heavy",
+    "kanji": "重"
+  },
+  {
+    "keyword": "inn",
+    "kanji": "宿"
+  },
+  {
+    "keyword": "place",
+    "kanji": "所"
+  },
+  {
+    "keyword": "hot",
+    "kanji": "暑"
+  },
+  {
+    "keyword": "help",
+    "kanji": "助"
+  },
+  {
+    "keyword": "shining",
+    "kanji": "昭"
+  },
+  {
+    "keyword": "extinguish",
+    "kanji": "消"
+  },
+  {
+    "keyword": "sell",
+    "kanji": "商"
+  },
+  {
+    "keyword": "chapter",
+    "kanji": "章"
+  },
+  {
+    "keyword": "win",
+    "kanji": "勝"
+  },
+  {
+    "keyword": "ride",
+    "kanji": "乗"
+  },
+  {
+    "keyword": "plant",
+    "kanji": "植"
+  },
+  {
+    "keyword": "say",
+    "kanji": "申"
+  },
+  {
+    "keyword": "body",
+    "kanji": "身"
+  },
+  {
+    "keyword": "god",
+    "kanji": "神"
+  },
+  {
+    "keyword": "true",
+    "kanji": "真"
+  },
+  {
+    "keyword": "deep",
+    "kanji": "深"
+  },
+  {
+    "keyword": "advance",
+    "kanji": "進"
+  },
+  {
+    "keyword": "world",
+    "kanji": "世"
+  },
+  {
+    "keyword": "put in order",
+    "kanji": "整"
+  },
+  {
+    "keyword": "long ago",
+    "kanji": "昔"
+  },
+  {
+    "keyword": "whole",
+    "kanji": "全"
+  },
+  {
+    "keyword": "mutual",
+    "kanji": "相"
+  },
+  {
+    "keyword": "send",
+    "kanji": "送"
+  },
+  {
+    "keyword": "concept",
+    "kanji": "想"
+  },
+  {
+    "keyword": "breath",
+    "kanji": "息"
+  },
+  {
+    "keyword": "fast",
+    "kanji": "速"
+  },
+  {
+    "keyword": "tribe",
+    "kanji": "族"
+  },
+  {
+    "keyword": "other",
+    "kanji": "他"
+  },
+  {
+    "keyword": "hit",
+    "kanji": "打"
+  },
+  {
+    "keyword": "opposite",
+    "kanji": "対"
+  },
+  {
+    "keyword": "wait",
+    "kanji": "待"
+  },
+  {
+    "keyword": "substitute",
+    "kanji": "代"
+  },
+  {
+    "keyword": "ordinal number prefix",
+    "kanji": "第"
+  },
+  {
+    "keyword": "topic",
+    "kanji": "題"
+  },
+  {
+    "keyword": "charcoal",
+    "kanji": "炭"
+  },
+  {
+    "keyword": "short",
+    "kanji": "短"
+  },
+  {
+    "keyword": "discuss",
+    "kanji": "談"
+  },
+  {
+    "keyword": "wear",
+    "kanji": "着"
+  },
+  {
+    "keyword": "pour",
+    "kanji": "注"
+  },
+  {
+    "keyword": "pillar",
+    "kanji": "柱"
+  },
+  {
+    "keyword": "ward",
+    "kanji": "丁"
+  },
+  {
+    "keyword": "account book",
+    "kanji": "帳"
+  },
+  {
+    "keyword": "investigate",
+    "kanji": "調"
+  },
+  {
+    "keyword": "follow",
+    "kanji": "追"
+  },
+  {
+    "keyword": "decide",
+    "kanji": "定"
+  },
+  {
+    "keyword": "garden",
+    "kanji": "庭"
+  },
+  {
+    "keyword": "flute",
+    "kanji": "笛"
+  },
+  {
+    "keyword": "iron",
+    "kanji": "鉄"
+  },
+  {
+    "keyword": "revolve",
+    "kanji": "転"
+  },
+  {
+    "keyword": "metropolis",
+    "kanji": "都"
+  },
+  {
+    "keyword": "degrees",
+    "kanji": "度"
+  },
+  {
+    "keyword": "throw",
+    "kanji": "投"
+  },
+  {
+    "keyword": "beans",
+    "kanji": "豆"
+  },
+  {
+    "keyword": "island",
+    "kanji": "島"
+  },
+  {
+    "keyword": "hot water",
+    "kanji": "湯"
+  },
+  {
+    "keyword": "climb",
+    "kanji": "登"
+  },
+  {
+    "keyword": "class",
+    "kanji": "等"
+  },
+  {
+    "keyword": "move",
+    "kanji": "動"
+  },
+  {
+    "keyword": "juvenile",
+    "kanji": "童"
+  },
+  {
+    "keyword": "farming",
+    "kanji": "農"
+  },
+  {
+    "keyword": "wave",
+    "kanji": "波"
+  },
+  {
+    "keyword": "distribute",
+    "kanji": "配"
+  },
+  {
+    "keyword": "double",
+    "kanji": "倍"
+  },
+  {
+    "keyword": "box",
+    "kanji": "箱"
+  },
+  {
+    "keyword": "farm",
+    "kanji": "畑"
+  },
+  {
+    "keyword": "departure",
+    "kanji": "発"
+  },
+  {
+    "keyword": "anti-",
+    "kanji": "反"
+  },
+  {
+    "keyword": "slope",
+    "kanji": "坂"
+  },
+  {
+    "keyword": "board",
+    "kanji": "板"
+  },
+  {
+    "keyword": "skin",
+    "kanji": "皮"
+  },
+  {
+    "keyword": "sad",
+    "kanji": "悲"
+  },
+  {
+    "keyword": "beauty",
+    "kanji": "美"
+  },
+  {
+    "keyword": "nose",
+    "kanji": "鼻"
+  },
+  {
+    "keyword": "writing brush",
+    "kanji": "筆"
+  },
+  {
+    "keyword": "ice",
+    "kanji": "氷"
+  },
+  {
+    "keyword": "express",
+    "kanji": "表"
+  },
+  {
+    "keyword": "second (part of time)",
+    "kanji": "秒"
+  },
+  {
+    "keyword": "sick",
+    "kanji": "病"
+  },
+  {
+    "keyword": "article",
+    "kanji": "品"
+  },
+  {
+    "keyword": "lose",
+    "kanji": "負"
+  },
+  {
+    "keyword": "part",
+    "kanji": "部"
+  },
+  {
+    "keyword": "clothes",
+    "kanji": "服"
+  },
+  {
+    "keyword": "luck",
+    "kanji": "福"
+  },
+  {
+    "keyword": "thing",
+    "kanji": "物"
+  },
+  {
+    "keyword": "flat",
+    "kanji": "平"
+  },
+  {
+    "keyword": "return",
+    "kanji": "返"
+  },
+  {
+    "keyword": "exertion",
+    "kanji": "勉"
+  },
+  {
+    "keyword": "release",
+    "kanji": "放"
+  },
+  {
+    "keyword": "flavor",
+    "kanji": "味"
+  },
+  {
+    "keyword": "fate",
+    "kanji": "命"
+  },
+  {
+    "keyword": "face",
+    "kanji": "面"
+  },
+  {
+    "keyword": "question",
+    "kanji": "問"
+  },
+  {
+    "keyword": "service",
+    "kanji": "役"
+  },
+  {
+    "keyword": "medicine",
+    "kanji": "薬"
+  },
+  {
+    "keyword": "reason",
+    "kanji": "由"
+  },
+  {
+    "keyword": "oil",
+    "kanji": "油"
+  },
+  {
+    "keyword": "have",
+    "kanji": "有"
+  },
+  {
+    "keyword": "play",
+    "kanji": "遊"
+  },
+  {
+    "keyword": "in advance",
+    "kanji": "予"
+  },
+  {
+    "keyword": "sheep",
+    "kanji": "羊"
+  },
+  {
+    "keyword": "ocean",
+    "kanji": "洋"
+  },
+  {
+    "keyword": "leaf",
+    "kanji": "葉"
+  },
+  {
+    "keyword": "sunshine",
+    "kanji": "陽"
+  },
+  {
+    "keyword": "formal title",
+    "kanji": "様"
+  },
+  {
+    "keyword": "fall",
+    "kanji": "落"
+  },
+  {
+    "keyword": "stream",
+    "kanji": "流"
+  },
+  {
+    "keyword": "trip",
+    "kanji": "旅"
+  },
+  {
+    "keyword": "both",
+    "kanji": "両"
+  },
+  {
+    "keyword": "green",
+    "kanji": "緑"
+  },
+  {
+    "keyword": "thanks",
+    "kanji": "礼"
+  },
+  {
+    "keyword": "row",
+    "kanji": "列"
+  },
+  {
+    "keyword": "practice",
+    "kanji": "練"
+  },
+  {
+    "keyword": "road",
+    "kanji": "路"
+  },
+  {
+    "keyword": "peace",
+    "kanji": "和"
+  }
+]
