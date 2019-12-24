@@ -137,7 +137,7 @@ export const App: React.FC = () => {
             });
           }}
         >
-          {[...Array(57).keys()]
+          {[...Array(27).keys()]
             .map(x => x + 4)
             .map(x => (
               <option key={x}>{x}</option>
@@ -188,7 +188,7 @@ const styles = {
   keyword: "inline-block w-full text-center text-4xl lg:text-5xl xl:text-6xl",
   score: "inline-block self-center text-4xl lg:text-6xl",
   kanjiContainer: `text-6xl sm:text-6xl md:text-6xl lg:text-6xl xl:text-6xl
-        w-auto md:w-2/3 lg:w-2/3 xl:w-1/2 flex flex-wrap justify-center`,
+        w-full md:w-2/3 lg:w-2/3 xl:w-1/2 flex flex-wrap justify-center`,
   kanji: `flex justify-center items-center w-32 h-32 p-2 rounded-lg cursor-pointer
         hover:bg-white hover:shadow-none lg:hover:shadow-xl lg:hover:bg-gray-200`,
   kanjiSelected:
