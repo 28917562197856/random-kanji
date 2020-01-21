@@ -1,80 +1,51 @@
 import React, { useReducer, useState } from "react";
-import kanjiSets from "./kanji.js";
+import kanjiSets from "./kanji";
 
-type Kanji = {
-  keyword: string;
-  kanji: string;
-};
-
-type State = {
-  score: number;
-  kanji: Kanji[];
-  selectedKanji: Kanji;
-  numOfKanji: number;
-  kanjiSet: string;
-};
-
-type Action =
-  | { type: "right"; score: number }
-  | { type: "wrong" }
-  | { type: "numOfKanji"; numOfKanji: number }
-  | { type: "kanjiSet"; kanjiSet: string };
-
-const take = (kanjiSet: string, n: number): Kanji[] => {
+function take(kanjiSet: string, n: number): Kanji[] {
   let shuffled: Kanji[] = kanjiSets[kanjiSet][kanjiSet];
   return shuffled.sort(() => 0.5 - Math.random()).slice(0, n);
-};
+}
 
-const lsGet = (name: string) => localStorage.getItem(name) ?? "";
+let lsGet = (name: string) => localStorage.getItem(name) ?? "";
 
-const init = () => {
-  const defaultNumOfKanji = parseInt(lsGet("numOfKanji")) || 24;
-  const defaultKanjiSet = lsGet("kanjiSet") || "allGrades";
-  const kanji = take(defaultKanjiSet, defaultNumOfKanji);
-  const selectedKanji = kanji[(kanji.length * Math.random()) << 0];
-  return {
-    score: 0,
-    kanji,
-    selectedKanji,
-    numOfKanji: defaultNumOfKanji,
-    kanjiSet: defaultKanjiSet
-  };
-};
-
-const reducer = (state: State, action: Action) => {
+function reducer(state: State, action: Action) {
   switch (action.type) {
     case "right": {
-      const newKanji = take(state.kanjiSet, state.numOfKanji);
+      let newKanji = take(state.kanjiSet, state.numOfKanji);
+      let newSelectedKanji = newKanji[(newKanji.length * Math.random()) << 0];
       return {
         ...state,
         score: action.score,
         kanji: newKanji,
-        selectedKanji: newKanji[(newKanji.length * Math.random()) << 0]
+        selectedKanji: newSelectedKanji
       };
     }
     case "wrong": {
-      const newKanji = take(state.kanjiSet, state.numOfKanji);
+      let newKanji = take(state.kanjiSet, state.numOfKanji);
+      let newSelectedKanji = newKanji[(newKanji.length * Math.random()) << 0];
       return {
         ...state,
         kanji: newKanji,
-        selectedKanji: newKanji[(newKanji.length * Math.random()) << 0]
+        selectedKanji: newSelectedKanji
       };
     }
     case "numOfKanji": {
-      const newKanji = take(state.kanjiSet, action.numOfKanji);
+      let newKanji = take(state.kanjiSet, state.numOfKanji);
+      let newSelectedKanji = newKanji[(newKanji.length * Math.random()) << 0];
       return {
         ...state,
         kanji: newKanji,
-        selectedKanji: newKanji[(newKanji.length * Math.random()) << 0],
+        selectedKanji: newSelectedKanji,
         numOfKanji: action.numOfKanji
       };
     }
     case "kanjiSet": {
-      const newKanji = take(action.kanjiSet, state.numOfKanji);
+      let newKanji = take(state.kanjiSet, state.numOfKanji);
+      let newSelectedKanji = newKanji[(newKanji.length * Math.random()) << 0];
       return {
         ...state,
         kanji: newKanji,
-        selectedKanji: newKanji[(newKanji.length * Math.random()) << 0],
+        selectedKanji: newSelectedKanji,
         kanjiSet: action.kanjiSet
       };
     }
@@ -82,14 +53,28 @@ const reducer = (state: State, action: Action) => {
       return state;
     }
   }
-};
+}
 
-const initialState = init();
+function init() {
+  let defaultNumOfKanji = parseInt(lsGet("numOfKanji")) || 24;
+  let defaultKanjiSet = lsGet("kanjiSet") || "allGrades";
+  let kanji = take(defaultKanjiSet, defaultNumOfKanji);
+  let selectedKanji = kanji[(kanji.length * Math.random()) << 0];
+  return {
+    score: 0,
+    kanji,
+    selectedKanji,
+    numOfKanji: defaultNumOfKanji,
+    kanjiSet: defaultKanjiSet
+  };
+}
 
-export const App: React.FC = () => {
-  const [state, dispatch] = useReducer(reducer, initialState);
-  const [changeBG, setChangeBG] = useState(false);
-  const { score, kanji, selectedKanji, kanjiSet } = state;
+let initialState = init();
+
+export default function App() {
+  let [state, dispatch] = useReducer(reducer, initialState);
+  let [changeBG, setChangeBG] = useState(false);
+  let { score, kanji, selectedKanji, kanjiSet } = state;
 
   return (
     <div
@@ -178,9 +163,9 @@ export const App: React.FC = () => {
       </div>
     </div>
   );
-};
+}
 
-const styles = {
+let styles = {
   select: "self-center",
   keyword: "inline-block w-full text-center text-4xl lg:text-5xl xl:text-6xl",
   score: "inline-block self-center text-4xl lg:text-6xl",
@@ -191,3 +176,22 @@ const styles = {
   kanjiSelected:
     "flex justify-center items-center w-32 h-32 p-2 rounded-lg bg-green-200"
 };
+
+type Kanji = {
+  keyword: string;
+  kanji: string;
+};
+
+type State = {
+  score: number;
+  kanji: Kanji[];
+  selectedKanji: Kanji;
+  numOfKanji: number;
+  kanjiSet: string;
+};
+
+type Action =
+  | { type: "right"; score: number }
+  | { type: "wrong" }
+  | { type: "numOfKanji"; numOfKanji: number }
+  | { type: "kanjiSet"; kanjiSet: string };
