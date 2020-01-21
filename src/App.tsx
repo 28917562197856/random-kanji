@@ -30,7 +30,7 @@ function reducer(state: State, action: Action) {
       };
     }
     case "numOfKanji": {
-      let newKanji = take(state.kanjiSet, state.numOfKanji);
+      let newKanji = take(state.kanjiSet, action.numOfKanji);
       let newSelectedKanji = newKanji[(newKanji.length * Math.random()) << 0];
       return {
         ...state,
@@ -40,7 +40,7 @@ function reducer(state: State, action: Action) {
       };
     }
     case "kanjiSet": {
-      let newKanji = take(state.kanjiSet, state.numOfKanji);
+      let newKanji = take(action.kanjiSet, state.numOfKanji);
       let newSelectedKanji = newKanji[(newKanji.length * Math.random()) << 0];
       return {
         ...state,
@@ -74,23 +74,20 @@ let initialState = init();
 export default function App() {
   let [state, dispatch] = useReducer(reducer, initialState);
   let [changeBG, setChangeBG] = useState(false);
-  let { score, kanji, selectedKanji, kanjiSet } = state;
+  let { score, kanji, selectedKanji } = state;
 
   return (
     <div
-      style={{
-        display: "grid",
-        gridTemplateColumns: "1fr",
-        justifyItems: "center"
-      }}
+      style={{ fontFamily: "'Roboto', sans-serif" }}
+      className="flex flex-column items-center"
     >
-      <div className="mt-4">
+      <div className="mv3">
         <select
+          className="mh2 bg-light-gray"
           style={{
             pointerEvents: changeBG ? "none" : undefined
           }}
           defaultValue={lsGet("kanjiSet") || "allGrades"}
-          className={styles.select}
           onChange={e => {
             localStorage.setItem("kanjiSet", e.target.value);
             dispatch({
@@ -106,11 +103,11 @@ export default function App() {
           ))}
         </select>
         <select
+          className="bg-light-gray"
           style={{
             pointerEvents: changeBG ? "none" : undefined
           }}
           defaultValue={parseInt(lsGet("numOfKanji")) || 24}
-          className={styles.select + " ml-2"}
           onChange={e => {
             localStorage.setItem("numOfKanji", e.target.value);
             dispatch({
@@ -119,30 +116,33 @@ export default function App() {
             });
           }}
         >
-          {[...Array(27).keys()]
-            .map(x => x + 4)
+          {[...Array(21).keys()]
+            .map(x => x + 5)
             .map(x => (
               <option key={x}>{x}</option>
             ))}
         </select>
       </div>
-      <div className={styles.keyword}>
-        {`${selectedKanji.keyword
-          .charAt(0)
-          .toUpperCase()}${selectedKanji.keyword.substring(1)}`}
+      <div className="f1 flex flex-column items-center">
+        <div>
+          {`${selectedKanji.keyword
+            .charAt(0)
+            .toUpperCase()}${selectedKanji.keyword.substring(1)}`}
+        </div>
+        <div className="mt2">{score}</div>
       </div>
-      <div className={styles.score}>{score}</div>
-      <div className={styles.kanjiContainer}>
+      <div className="w-100 w-80-ns w-33-l flex flex-wrap justify-center f1">
         {kanji.map(k => (
           <div
             style={{
               fontFamily: "'M PLUS Rounded 1c', sans-serif",
-              pointerEvents: changeBG ? "none" : undefined
+              pointerEvents: changeBG ? "none" : undefined,
+              cursor: "pointer"
             }}
             className={
               k === selectedKanji && changeBG
-                ? styles.kanjiSelected
-                : styles.kanji
+                ? "flex items-center justify-center fl w-third w-25-ns w-20-l h4 bg-light-green br4"
+                : "flex items-center justify-center fl w-third w-25-ns w-20-l h4 grow br4"
             }
             key={`${k.keyword}${Math.random() * 100000}`}
             onClick={() => {
@@ -164,18 +164,6 @@ export default function App() {
     </div>
   );
 }
-
-let styles = {
-  select: "self-center",
-  keyword: "inline-block w-full text-center text-4xl lg:text-5xl xl:text-6xl",
-  score: "inline-block self-center text-4xl lg:text-6xl",
-  kanjiContainer: `text-6xl sm:text-6xl md:text-6xl lg:text-6xl xl:text-6xl
-        w-full md:w-2/3 lg:w-2/3 xl:w-1/2 flex flex-wrap justify-center`,
-  kanji: `flex justify-center items-center w-32 h-32 p-2 rounded-lg cursor-pointer
-        hover:bg-white hover:shadow-none lg:hover:shadow-xl lg:hover:bg-gray-200`,
-  kanjiSelected:
-    "flex justify-center items-center w-32 h-32 p-2 rounded-lg bg-green-200"
-};
 
 type Kanji = {
   keyword: string;
